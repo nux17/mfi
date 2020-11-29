@@ -1,4 +1,5 @@
 from django.contrib.gis.db.models import PointField
+from django.contrib.gis.db.models import  Manager as GeoManager
 from django.db import models
 
 class Peak(models.Model):
