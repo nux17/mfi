@@ -1,3 +1,8 @@
+"""
+Route definition for peaks objects
+"""
+
+
 import json
 
 from django.contrib.gis.geos import Point
@@ -17,6 +22,21 @@ class PeakSerializer(serializers.HyperlinkedModelSerializer):
 
 
 class PeakViewSet(viewsets.ModelViewSet):
+    """
+    Provides list view with **GET, POST** methods and detail view with **GET, PUT, PATCH, DELETE** methods.
+
+    Parameters:
+
+    *location*: JSON field containing **longitude** (float) and **latitude** (float) values
+
+    *altitude*: integer
+
+    *name*: string
+
+    Query parameters:
+
+    *boundaries*: JSON list of two points list defining a box, returns all points contained within that box
+    """
     serializer_class = PeakSerializer
 
     def get_queryset(self):
