@@ -10,11 +10,11 @@ The chosen solution lies with Django and Django REST Framework over a PostGIS da
 
 Clone the repository using SSH
 
-`git@gitlab.com:maxime.boguta/mfi.git`
+`git@github.com:nux17/mfi.git`
 
 or HTTPS
 
-`https://gitlab.com/maxime.boguta/mfi.git`
+`https://github.com/nux17/mfi.git`
 
 ## Setting up the environment
 

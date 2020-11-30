@@ -36,6 +36,7 @@ class PeakViewSet(viewsets.ModelViewSet):
     Query parameters:
 
     *boundaries*: JSON list of two points list defining a box, returns all points contained within that box
+    eg. [[0.0,0.0],[5.0,5.0],[10.0,10.0],[0.0,0.0]]
     """
     serializer_class = PeakSerializer
 
